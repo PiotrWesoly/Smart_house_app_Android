@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button.setBackgroundResource(R.drawable.outlet_btn_dark);
                 break;
             case ("Fan: \non"):
-                text.setText("Fan: \noff");
+                text.setText("Ventilation: \noff");
                 break;
             case ("Lights: \noff"):
                 text.setText("Lights: \non");
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 text.setText("Outlet: \non");
                 button.setBackgroundResource(R.drawable.outlet_btn);
                 break;
-            case ("Fan: \noff"):
+            case ("Ventilation: \noff"):
                 text.setText("Fan: \non");
                 break;
             default:

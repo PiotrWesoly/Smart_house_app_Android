@@ -144,13 +144,13 @@
                 android:layout_height="100dp"
                 android:layout_margin="17dp"
                 android:elevation="6dp"
-                android:background="@drawable/bt_btn" />
+                android:background="@drawable/fan_btn" />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:elevation="6dp"
                 android:fontFamily="serif-bold"
-                android:text="Connect to \nhome"
+                android:text="Ventilation: \non"
                 android:id="@+id/btn1_text"
                 android:textColor="#757474"
                 android:layout_marginTop="70dp"
@@ -226,10 +226,10 @@
                 android:elevation="6dp"
                 android:id="@+id/btn4_text"
                 android:fontFamily="serif-bold"
-                android:text="Fan: \non"
+                android:text="Ventilation: \non"
                 android:textColor="#757474"
                 android:layout_marginTop="70dp"
-                android:layout_marginLeft="35dp"/>
+                android:layout_marginLeft="30dp"/>
         </RelativeLayout>
 
         <RelativeLayout
