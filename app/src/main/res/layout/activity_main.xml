@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#FFF2E5">
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="230dp"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        android:background="#FFF2E5">-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/livingroom" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginBottom="0dp"
+                android:alpha="0.3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="serif"
+                android:text="Smart home"
+                android:textColor="@color/white"
+                android:textSize="40dp" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="4dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="167dp"
+                app:srcCompat="@drawable/gradient_line" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="140dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="20dp"
+            android:layout_margin="20dp"
+            app:cardBackgroundColor="@color/white">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/thermometer_icon"/>
+
+                <TextView
+                    android:id="@+id/temperature"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="130dp"
+                    android:layout_marginTop="25dp"
+                    android:textAlignment="center"
+                    android:fontFamily="serif"
+                    android:textColor="@color/black"
+                    android:textSize="35dp"
+                    android:text="23°"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="-7dp">
+
+            <ImageButton
+                android:id="@+id/btn0"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:elevation="6dp"
+                android:background="@drawable/bt_btn" />
+            <TextView
+                android:id="@+id/btn0_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:fontFamily="serif-bold"
+                android:text="Connect to \nhome"
+                android:textColor="#757474"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="0dp"
+        android:background="#FFF2E5">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:elevation="6dp"
+                android:background="@drawable/bt_btn" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:fontFamily="serif-bold"
+                android:text="Connect to \nhome"
+                android:id="@+id/btn1_text"
+                android:textColor="#757474"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="30dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:elevation="6dp"
+                android:background="@drawable/light_btn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:id="@+id/btn2_text"
+                android:fontFamily="serif-bold"
+                android:text="Lights: \non"
+                android:textColor="#757474"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="35dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:elevation="6dp"
+                android:background="@drawable/outlet_btn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:id="@+id/btn3_text"
+                android:fontFamily="serif-bold"
+                android:text="Outlet: \non"
+                android:textColor="#757474"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="35dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="0dp"
+        android:background="#FFF2E5">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:elevation="6dp"
+                android:id="@+id/btn4"
+                android:background="@drawable/fan_btn"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:id="@+id/btn4_text"
+                android:fontFamily="serif-bold"
+                android:text="Fan: \non"
+                android:textColor="#757474"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="35dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn5"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:elevation="6dp"
+                android:background="@drawable/light_btn"/>
+            <TextView
+                android:id="@+id/btn5_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:fontFamily="serif-bold"
+                android:text="Lights: \non"
+                android:textColor="#757474"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="35dp"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/btn6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="17dp"
+                android:elevation="6dp"
+                android:background="@drawable/outlet_btn"/>
+            <TextView
+                android:id="@+id/btn6_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="6dp"
+                android:fontFamily="serif-bold"
+                android:text="Outlet: \non"
+                android:textColor="#757474"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="35dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
