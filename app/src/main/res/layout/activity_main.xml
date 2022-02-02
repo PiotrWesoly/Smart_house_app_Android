@@ -6,7 +6,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#FFF2E5">
+    android:background="#FFF2E5"
+    android:keepScreenOn="true"
+    >
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -23,176 +25,296 @@
             android:text="HELLO"
             android:textSize="40dp"
             android:textAlignment="center"
-            android:fontFamily="serif-bold"
+            android:fontFamily="serif"
             android:textColor="#A1724E"/>
 
-    <!--    <LinearLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="230dp"-->
-    <!--        android:layout_marginTop="0dp"-->
-    <!--        android:background="#FFF2E5">-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/LivingRoom"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginHorizontal="20dp">
-
-            <RelativeLayout
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bluetooth"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginTop="0dp">
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp">
 
-                <ImageView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:layout_marginTop="0dp"
-                    android:src="@drawable/livingroom"
-                    android:scaleType="centerCrop"
-                    />
+                    android:layout_marginTop="0dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:alpha="0.3"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@color/black" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/house"
+                        android:scaleType="centerCrop"
+                        />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="110dp"
-                    android:layout_marginBottom="0dp"
-                    android:fontFamily="monospace"
-                    android:text="Living Room"
-                    android:textColor="@color/white"
-                    android:textSize="30dp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:alpha="0.3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@color/black" />
+                    <ImageView
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="40dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/bt_icon_white"/>
 
-                <ImageView
-                    android:layout_width="250dp"
-                    android:layout_height="4dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="167dp"
-                    app:srcCompat="@drawable/gradient_line" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="70dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="monospace"
+                        android:text="Connect to your house"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
 
-            <RelativeLayout
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="167dp"
+                        app:srcCompat="@drawable/gradient_line" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/lockdoor"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginTop="0dp">
+                android:layout_height="150dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp">
 
-                <ImageView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:layout_marginTop="0dp"
-                    android:src="@drawable/kitchen"
-                    android:scaleType="centerCrop"
-                    />
+                    android:layout_marginTop="0dp">
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:alpha="0.3"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@color/black" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/frontdoor"
+                        android:scaleType="centerCrop"
+                        />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="110dp"
-                    android:layout_marginBottom="0dp"
-                    android:fontFamily="monospace"
-                    android:text="Kitchen"
-                    android:textColor="@color/white"
-                    android:textSize="30dp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:alpha="0.3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@color/black" />
+                    <ImageView
+                        android:id="@+id/lock"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_margin="40dp"
+                        android:elevation="5dp"
+                        android:src="@drawable/lock_icon_locked"/>
 
-                <ImageView
-                    android:layout_width="250dp"
-                    android:layout_height="4dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="167dp"
-                    app:srcCompat="@drawable/gradient_line" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:cardCornerRadius="20dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginHorizontal="20dp">
+                    <TextView
+                        android:id="@+id/lock_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="200dp"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="monospace"
+                        android:text="LOCKED"
+                        android:textColor="@color/white"
+                        android:textSize="20dp" />
 
-            <RelativeLayout
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="167dp"
+                        app:srcCompat="@drawable/gradient_line" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/LivingRoom"
                 android:layout_width="match_parent"
-                android:layout_height="230dp"
-                android:layout_marginTop="0dp">
+                android:layout_height="200dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp">
 
-                <ImageView
+                <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="230dp"
-                    android:layout_marginTop="0dp"
-                    android:src="@drawable/bathroom"
-                    android:scaleType="centerCrop"
-                    />
+                    android:layout_marginTop="0dp">
 
-                <ImageView
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/livingroom"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:alpha="2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/grad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="monospace"
+                        android:text="Living Room"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="167dp"
+                        app:srcCompat="@drawable/gradient_line" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp">
+
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="0dp"
-                    android:layout_marginTop="0dp"
-                    android:layout_marginEnd="0dp"
-                    android:layout_marginBottom="0dp"
-                    android:alpha="0.3"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@color/black" />
+                    android:layout_height="230dp"
+                    android:layout_marginTop="0dp">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="110dp"
-                    android:layout_marginBottom="0dp"
-                    android:fontFamily="monospace"
-                    android:text="Bath Room"
-                    android:textColor="@color/white"
-                    android:textSize="30dp" />
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/kitchen"
+                        android:scaleType="centerCrop"
+                        />
 
-                <ImageView
-                    android:layout_width="250dp"
-                    android:layout_height="4dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="167dp"
-                    app:srcCompat="@drawable/gradient_line" />
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:alpha="2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/grad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="monospace"
+                        android:text="Kitchen"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="167dp"
+                        app:srcCompat="@drawable/gradient_line" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginHorizontal="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp"
+                    android:layout_marginTop="0dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="230dp"
+                        android:layout_marginTop="0dp"
+                        android:src="@drawable/bathroom"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_marginBottom="0dp"
+                        android:alpha="2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/grad" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="130dp"
+                        android:layout_marginBottom="0dp"
+                        android:fontFamily="monospace"
+                        android:text="Bath Room"
+                        android:textColor="@color/white"
+                        android:textSize="30dp" />
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="4dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="167dp"
+                        app:srcCompat="@drawable/gradient_line" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -222,18 +344,18 @@
                         android:layout_marginTop="0dp"
                         android:layout_marginEnd="0dp"
                         android:layout_marginBottom="0dp"
-                        android:alpha="0.3"
+                        android:alpha="2"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@color/black" />
+                        app:srcCompat="@drawable/grad" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginTop="110dp"
+                        android:layout_marginTop="130dp"
                         android:layout_marginBottom="0dp"
                         android:fontFamily="monospace"
                         android:text="Bed Room"
